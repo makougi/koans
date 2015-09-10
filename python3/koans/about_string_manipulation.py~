@@ -71,4 +71,4 @@ class AboutStringManipulation(Koan):
         self.assertEqual("GUIDO", 'guido'.upper())
         self.assertEqual("timbot", 'TimBot'.lower())
         self.assertEqual("Guido Van Rossum", 'guido van rossum'.title())
-        self.assertEqual("tOtAlLy AwEsOmE", 'ToTaLlY aWeSoMe'.swapcase())
+        self.assertEqual("tOtAlLy AwEsOmE, 'ToTaLlY aWeSoMe'.swapcase())
