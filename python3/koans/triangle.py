@@ -17,9 +17,24 @@
 #   about_triangle_project_2.py
 #
 def triangle(a, b, c):
-    # DELETE 'PASS' AND WRITE THIS CODE
-    pass
+
+    if a<=0 or b <=0 or c<=0:
+        raise TriangleError
+
+    k1, k2, h = sorted([a, b, c])
+
+    if k1 + k2 <= h:
+        raise TriangleError
+
+
+    if a==b and b==c:
+        return "equilateral"
+
+    if a==b or b==c or a==c:
+        return "isosceles"
+
+    return "scalene"
 
 # Error class used in part 2.  No need to change this code.
 class TriangleError(Exception):
-    pass
+        pass
